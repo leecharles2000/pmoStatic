@@ -10,12 +10,27 @@
         
         <link rel="stylesheet" href="css/styles.css">
         <script src="js/modernizr-2.8.3.min.js"></script>
+        <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+        <script>
+            var liffID = '1655805133-3Xge2xgv';
+
+            liff.init({
+            liffId: liffID
+            }).then(function() {
+            console.log('LIFF init');
+            
+            // 這邊開始寫使用其他功能
+            
+            }).catch(function(error) {
+            console.log(error);
+            });            
+        </script>
     </head>
     <body>
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <p>PMO Channel Static Data</p>
 	    <img src="img/meeting.png">
 
-
+        <input type="button" value="open report" onclick="window.location.href='/rpt/Prj-BONDFUT/20210326.html'"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
         <script src="js/script.js"></script>
